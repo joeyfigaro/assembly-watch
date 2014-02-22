@@ -3,26 +3,222 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "compass/reset", "compass/css3";
 @import "bourbon/bourbon";
 @import "typeplate/typeplate";
+@import "tables";
+@import "variables";
 @import url(http://fonts.googleapis.com/css?family=Istok+Web:400,700);
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Istok Web', Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  width: 80%;
+  font-size: $base;
+  width: 60%;
+  background: $slate;
+  color: $white;
   margin: 0 auto;
+}
+
+a {
+  color: #37a5eb;
+  text-decoration: none;
+}
+
+header {
+  @include clearfix;
+  padding: 2rem 0 1rem;
+
+  .logo {
+    width: 300px;
+    float: left;
+  }
+
+  .search {
+    position: relative;
+    top: 30px;
+    width: 290px;
+    float: right;
+  }
+
+  .search input {
+    color: $white;
+    font-size: 1rem;
+    width: 100%;
+    background: lighten($slate, 5%);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 0.9rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .search em {
+    display: block;
+    color: lighten($slate, 16%);
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
 }
 
 table {
-  width: 80%;
+  color: $slate;
+  width: 100%;
+  background: $white;
   margin: 0 auto;
 
-  td, th {
+  thead th {
+    background-color: $slate !important;
+    color: lighten($slate, 20%);
+  }
+
+  th {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  tr td {
+    border-bottom: darken($white, 5%) solid 1px;
+  }
+
+  // Headers
+  th.number {
+    text-align: center;
+  }
+
+  th.law {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  th.search {
+    padding-left: 0;
+  }
+
+  tr:hover td {
+    background: $green;
+    border-bottom-color: $green;
+
+    &.number, &.description a, &.law {
+      color: darken($green, 55%);
+      @include text-shadow(darken($green, 10%) 0 1px 0);
+    }
+
+    &.number span {
+      background: none;
+      box-shadow: none;
+    }
+
+    &.dataTables_empty {
+      background: $white;
+    }
+  }
+
+  // Cells
+  td.number {
+    text-align: center;
+    width: 90px;
+    // background: darken($white, 4%);
+  }
+
+  td.number span {
+    display: block;
+    font-size: 0.8rem;
+    width: 70%;
+    margin: 0 auto;
+    background: darken($white, 4%);
+    box-shadow: darken($white, 8%) 0 1px 0 inset;
+    border-radius: 4px;
+  }
+
+  td.description a {
+    display: block;
     padding: 1rem;
   }
 
-  .number {
-    text-align: center;
+  td.law {
+    font-size: 0.8rem;
+    padding-right: 0.7rem;
   }
 }
+
+// Data tables
+.dataTables_info {
+  color: lighten($slate, 30%);
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.dataTables_paginate {
+  width: 120px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: $green;
+  }
+}
+
+.dataTables_length {
+  width: 400px;
+}
+
+.dataTables_filter {
+  display: none;
+}
+
+.dataTables_paginate a.paginate_enabled_next {
+  float: right;
+}
+
+.dataTables_empty {
+  padding: 1rem;
+}
+
+.four-oh-four img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+.four-oh-four h1 {
+  color: $white;
+}
+
+.four-oh-four p {
+  font-size: 1.4rem;
+  color: $white;
+}
+
+@media all and (max-width: 1009px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 680px) {
+  header .logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  header .search {
+    float: none;
+    margin: 0 auto 2rem;
+  }
+}
+
+// Temporary
+// input {
+//   display: none;
+// }
