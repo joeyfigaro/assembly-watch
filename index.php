@@ -29,7 +29,7 @@
 
                 function clean_json($source, $property) {
                     $cleaned = [];
-                    $duplicates = [];
+                    $exists = [];
 
                     foreach($source as $item) {
                         if(!in_array($item[$property], $exists)) {

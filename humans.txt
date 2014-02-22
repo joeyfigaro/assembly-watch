@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Joey Figaro - designer/developer - @joeyfigaro
 
 # THANKS
 
-    <name>
+    Larkin Garbee, 804RVA, everyone I met or talked to today, Code for America, and open data initiatives
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    HTML5, CSS3, Sass, Compass/Bourbon
+    PHP
+    jQuery
