@@ -513,9 +513,11 @@ p + .drop-cap {
 /* line 13, ../sass/app.scss */
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
-/* line 17, ../sass/app.scss */
+/* line 19, ../sass/app.scss */
 body {
   font-family: 'Istok Web', Helvetica, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -525,13 +527,13 @@ body {
   margin: 0 auto;
 }
 
-/* line 26, ../sass/app.scss */
+/* line 28, ../sass/app.scss */
 a {
   color: #37a5eb;
   text-decoration: none;
 }
 
-/* line 31, ../sass/app.scss */
+/* line 33, ../sass/app.scss */
 header {
   *zoom: 1;
   padding: 2rem 0 1rem;
@@ -545,19 +547,19 @@ header:before, header:after {
 header:after {
   clear: both;
 }
-/* line 35, ../sass/app.scss */
+/* line 37, ../sass/app.scss */
 header .logo {
   width: 300px;
   float: left;
 }
-/* line 40, ../sass/app.scss */
+/* line 42, ../sass/app.scss */
 header .search {
   position: relative;
   top: 30px;
   width: 290px;
   float: right;
 }
-/* line 47, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 header .search input {
   color: #f9f9f9;
   font-size: 1rem;
@@ -567,11 +569,11 @@ header .search input {
   border-radius: 20px;
   padding: 0.5rem 0.9rem;
 }
-/* line 56, ../sass/app.scss */
+/* line 58, ../sass/app.scss */
 header .search input:focus {
   outline: none;
 }
-/* line 61, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 header .search em {
   display: block;
   color: #434343;
@@ -579,65 +581,65 @@ header .search em {
   margin-top: 0.3rem;
 }
 
-/* line 69, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 table {
   color: #1a1a1a;
   width: 100%;
   background: #f9f9f9;
   margin: 0 auto;
 }
-/* line 75, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 table thead th {
   background-color: #1a1a1a !important;
   color: #4d4d4d;
 }
-/* line 80, ../sass/app.scss */
+/* line 82, ../sass/app.scss */
 table th {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
-/* line 85, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 table tr td {
   border-bottom: #ececec solid 1px;
 }
-/* line 90, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 table th.number {
   text-align: center;
 }
-/* line 94, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 table th.law {
   text-align: left;
   padding: 0.5rem 0;
 }
-/* line 99, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 table th.search {
   padding-left: 0;
 }
-/* line 103, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 table tr:hover td {
   background: #8aecac;
   border-bottom-color: #8aecac;
 }
-/* line 107, ../sass/app.scss */
+/* line 109, ../sass/app.scss */
 table tr:hover td.number, table tr:hover td.description a, table tr:hover td.law {
   color: #0d5024;
   text-shadow: #5ee58d 0 1px 0;
 }
-/* line 112, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 table tr:hover td.number span {
   background: none;
   box-shadow: none;
 }
-/* line 117, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 table tr:hover td.dataTables_empty {
   background: #f9f9f9;
 }
-/* line 123, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 table td.number {
   text-align: center;
   width: 90px;
 }
-/* line 129, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 table td.number span {
   display: block;
   font-size: 0.8rem;
@@ -647,18 +649,18 @@ table td.number span {
   box-shadow: #e5e5e5 0 1px 0 inset;
   border-radius: 4px;
 }
-/* line 139, ../sass/app.scss */
+/* line 141, ../sass/app.scss */
 table td.description a {
   display: block;
   padding: 1rem;
 }
-/* line 144, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 table td.law {
   font-size: 0.8rem;
   padding-right: 0.7rem;
 }
 
-/* line 151, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 .dataTables_info {
   color: #676767;
   font-size: 0.8rem;
@@ -667,39 +669,39 @@ table td.law {
   padding: 0.5rem 0;
 }
 
-/* line 159, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 .dataTables_paginate {
   width: 120px;
   margin: 0 auto;
 }
-/* line 163, ../sass/app.scss */
+/* line 165, ../sass/app.scss */
 .dataTables_paginate a {
   text-decoration: underline;
   cursor: pointer;
   color: #8aecac;
 }
 
-/* line 170, ../sass/app.scss */
+/* line 172, ../sass/app.scss */
 .dataTables_length {
   width: 400px;
 }
 
-/* line 174, ../sass/app.scss */
+/* line 176, ../sass/app.scss */
 .dataTables_filter {
   display: none;
 }
 
-/* line 178, ../sass/app.scss */
+/* line 180, ../sass/app.scss */
 .dataTables_paginate a.paginate_enabled_next, .dataTables_paginate a.paginate_disabled_next {
   float: right;
 }
 
-/* line 182, ../sass/app.scss */
+/* line 184, ../sass/app.scss */
 .dataTables_empty {
   padding: 1rem;
 }
 
-/* line 186, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 .four-oh-four img {
   display: block;
   width: 300px;
@@ -707,32 +709,32 @@ table td.law {
   margin: 2rem auto;
 }
 
-/* line 193, ../sass/app.scss */
+/* line 195, ../sass/app.scss */
 .four-oh-four h1 {
   color: #f9f9f9;
 }
 
-/* line 197, ../sass/app.scss */
+/* line 199, ../sass/app.scss */
 .four-oh-four p {
   font-size: 1.4rem;
   color: #f9f9f9;
 }
 
 @media all and (max-width: 1009px) {
-  /* line 203, ../sass/app.scss */
+  /* line 205, ../sass/app.scss */
   body {
     width: 90%;
   }
 }
 @media all and (max-width: 680px) {
-  /* line 209, ../sass/app.scss */
+  /* line 211, ../sass/app.scss */
   header .logo {
     display: block;
     float: none;
     margin: 0 auto;
   }
 
-  /* line 215, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   header .search {
     float: none;
     margin: 0 auto 2rem;
