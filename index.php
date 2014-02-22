@@ -28,8 +28,8 @@
                 $data = json_decode($raw, true);
 
                 function clean_json($source, $property) {
-                    $cleaned = [];
-                    $exists = [];
+                    $cleaned = array();
+                    $exists = array();
 
                     foreach($source as $item) {
                         if(!in_array($item[$property], $exists)) {

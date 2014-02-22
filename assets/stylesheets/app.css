@@ -690,7 +690,7 @@ table td.law {
 }
 
 /* line 178, ../sass/app.scss */
-.dataTables_paginate a.paginate_enabled_next {
+.dataTables_paginate a.paginate_enabled_next, .dataTables_paginate a.paginate_disabled_next {
   float: right;
 }
 

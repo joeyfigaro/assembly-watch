@@ -175,7 +175,7 @@ table {
   display: none;
 }
 
-.dataTables_paginate a.paginate_enabled_next {
+.dataTables_paginate a.paginate_enabled_next, .dataTables_paginate a.paginate_disabled_next {
   float: right;
 }
 
