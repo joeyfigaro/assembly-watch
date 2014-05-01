@@ -28,8 +28,6 @@
         </header>
         <main>
             <?php
-                error_reporting(E_ALL);
-
                 $raw = file_get_contents('http://www.richmondsunlight.com/downloads/law-changes.json');
                 $data = json_decode($raw, true);
 
